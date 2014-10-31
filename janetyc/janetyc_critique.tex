@@ -18,16 +18,21 @@
 % (commentary here)
 % 1 summary
 % 3 positive topics, 1 criticism 
-\section{Scalable Multi-label Annotation}
-Deng \emph{et~al.} \cite{Deng2014} address the scalabliity issue of multi-label annotation. They proposes an algorithm that exploits correlation, hierarchy, and sparsity of the label distribution.
+\section{Scalable Multi-label Annotation -- Rating: 4/5}
+Deng \emph{et~al.} \cite{Deng2014} address the scalablity issue of multi-label annotation. They proposes an algorithm that exploits correlation, hierarchy, and sparsity of the label distribution to yield significant savings for image labeling tasks.\\
 
-% positive #1:
+% positive #1: 3 key observations
+The paper clearly identifies three key obersvations for labels in real world scenarios. The labels are correlated, sparse and naturally form a hierarchy.\\
 
 % positive #2:
+The authors propose a theoretical analysis and a practical algorithm to satify the assumptions. They clearly define the utlity and cost function and use a pseudo code to describe the algorithm.\\
 
 % positive #3:
+The paper applys the algorithm on a real image dataset in real world scenarios. The results show that their algorithm accuires up to 6× savings compared to the na\"{i}ve approach.\\
 
 % criticism:
+I wish they can provide a complete example to describe the process of anaylysis and demostrate the power of algorithm for reducing the costs. To achieve the goal of scalablity, we should select the high-utility queries with low cost. I wish the authors can provide their ideas on the trade-off between utility and cost.
+
 
 % ----------------------- import bibtex ----------------------------
 \bibliographystyle{abbrv}
