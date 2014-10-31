@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+% Preamble Area
+
+\usepackage{geometry} 
+\usepackage{graphicx}
+
+
+\newtheorem{assumption}{Assumption}
+
+ 
+\title{Paper Commentary Exercise}
+\author{Shih-Han Wang}
+
+\begin{document}
+\maketitle
+% -----------------------
+% Paper Name -- Rating: __/5
+% (commentary here)
+% 1 summary
+% 3 positive topics, 1 criticism 
+\section{Decomposing Activities of Daily Living to Discover Routine Clusters}
+\subsection{Rating: 4/5}
+Y\"{u}r\"{u}ten \cite{aaai_YurutenZP14} proposed an unsupervised approach to discover clusters of daily activity routines. This method is based on matrix decomposition to isolate routines and deviations to obtain two sets of clusters and then reconstruct the result via the cross product. The result based on average silhouette width scores can capture strong structures in the underlying data and is improved by $12\%$.\\
+
+% positive #1:
+The novelty of the approach lies in how to combine low rank and sparse matrix decomposition and time warping techniques for activity analysis which I have never seen in literature before. \\
+
+% positive #2:
+The approach deals with whole time series data rather than a subset of motifs or feature in literature. Also, the approach doesn't need to learn parameters from data as opposed to Bayesian Learning approach.\\
+
+% positive #3:
+Currently, the experiments displayed better performance than other normal clustering approaches to show the validity of the approach of matrix decomposition. The future work of this paper is interesting if it can deal with multiple sensor data from  environments.\\ 
+
+% criticism:
+Although the use of matrix decomposition seems to be promising, the paper didn't clearly explain clustering process about why certain building block is used rather than other. For example, I am not sure why Silhouette index just because of its popularity?\\
+
+In the experiment, The author demonstrated the results with several clusters. But the reason of why certain cluster contains corresponding meaning didn't clearly explained. For example, in HealthyTogether dataset, the routines can be associated to several persona information but is that based on the ground truths or just an interpretation from the author?\\
+
+% ----------------------- import bibtex ----------------------------
+\bibliographystyle{abbrv}
+\bibliography{hans_critique}
+
+
+\end{document}
