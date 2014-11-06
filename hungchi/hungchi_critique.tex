@@ -1,9 +1,10 @@
 \documentclass[a4paper]{article}
 % Preamble Area
-
 \usepackage{geometry} 
 \usepackage{graphicx}
-
+\usepackage[utf8]{inputenc} 
+\usepackage[encapsulated]{CJK} 
+\begin{CJK}{UTF8}{bsmi}    
 
 \newtheorem{assumption}{Assumption}
 
@@ -17,12 +18,28 @@
 % Paper Name -- Rating: __/5
 % (commentary here)
 % 1 summary
-% 3 positive topics, 1 criticism 
-\section{-- Rating: 4/5}
-\\
+% 3 positive topics, 1 criticism
+\section{Assisting Social Conversation between Persons with Alzheimer’s Disease and their Conversational Partners-- Rating: 4/5}
+This paper presents a framework for developing a natural language processing system to monitor a conversation and provide context-sensitive suggestions to a Facilitator.\\
+% positive #1: 3 key observations
+First, it is commendable that the literature surveys of background, motivation and technology are doing very complete in this paper. It can help us easily understand problems and the feasibility of implementing the system.\\
+
+% positive #2:
+The paper is focus on how to maintain a conversation between a Facilitator and Storyteller, so that they try to use some objective techniques to facilitate the conversation but not use the content of stories. In the paper, they provides seven grounding acts to repair the conversation.\\
+
+
+% positive #3:
+The paper analyzes some existing corpus to evaluate the idea and take a place of real experiments, it also artfully avoids the bottleneck of automatically speech recognition. \\
+
+% criticism:
+The paper presents a ideally and theoretically framework, because they illustrate technical side for all components but not the details of implementation. \\
+
+
+
+\section{Audio-Enhanced Paper Photos: Encouraging Social Interaction at Age 105-- Rating: 4/5}
 
 % positive #1: 3 key observations
-這篇 Paper 是一份完整的 User case study。 之前此團隊發表過一篇 TAP & PLAY，是以介紹用數位筆錄音標記的 Toolkit，比較偏工具類，而這篇就是完整的將技術應用於 105 歲的老奶奶以及她的家庭中，因此整篇的敘述都是以質性的訪談調查為主。除此之外，也有針對錄音的行為進行分析與討論，觀察在不同的 iteration 裡，家庭成員錄音的情形。\\
+這篇 Paper 是一份完整的 User case study。 之前此團隊發表過一篇 TAP\&PLAY，是以介紹用數位筆錄音標記的 Toolkit，比較偏工具類，而這篇就是完整的將技術應用於 105 歲的老奶奶以及她的家庭中，因此整篇的敘述都是以質性的訪談調查為主。除此之外，也有針對錄音的行為進行分析與討論，觀察在不同的 iteration 裡，家庭成員錄音的情形。\\
 
 % positive #2:
 這篇用到的技術其實更貼近生活，比起用平板裝置，數位筆搭配傳統相簿是會帶給使用者更傳統的感受。技術上是在紙上設計特別的點陣圖，讓數位筆可以辨識不同區塊所代表的功能，達到錄音或播放等功能。同時可以在紙本上加上更多手寫的註解，例如：TAP HERE!! 讓使用行為非常貼近過去的習慣，對於長輩而言或許接受度更高。\\
@@ -38,5 +55,5 @@
 \bibliographystyle{abbrv}
 \bibliography{hungchi_critique}
 
-
+\end{CJK} 
 \end{document}
