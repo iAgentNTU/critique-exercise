@@ -15,9 +15,35 @@
 \maketitle
 % -----------------------
 % Paper Name -- Rating: __/5
-% (commentary here)
 % 1 summary
-% 3 positive topics, 1 criticism 
+% 3 positive topics
+% 1 criticism 
+% -----------------------
+
+
+
+
+% -----------------------
+% date: 2014/11/14
+\section{Fine-Grained Visual Comparisons with Local Learning -- Rating: 4/5}
+% summary
+% RQ: how to idnetify neighboring training pairs: we show how to learn pairs analogous to the input, accounting for the attribute-specefic visual similarities.
+To solve fine-grained viusal comparisons, the paper \cite{fine-grained} proposes a local learning approach to train comparative attributes based on fine-grained analogous pairs and introduces a new dataset specialized to the problem. The results indicate that more labeled data is not nessarily preferable to isolating the right data. \\
+
+% positive #1: visual comparisons need not be transitive, so use local function rather global function
+The authors propose an interesting idea about visual comparison. They think that the visual comparisons need not be transitive, so they choose local ranking function instead of global function. \\
+
+% positive #2: compare two state-of-the-art method on three dataset
+They did a large scale experiments on evaluating their methods. They've compared two state-of-the-art methods on three databases. I think the results have high reliability. \\
+
+% positive #3: clear definition and queation
+The approach is described by clear definition and equations. The reader can understand the detail much easier. \\
+
+% criticism: how to choose the subtle detail parameter?
+Choosing the suitable relative attribute between two images is a key for this method. If there is a dependency between two attribute, are the visual comparison results still not transitive?
+
+% ----------------------
+% date: 2014/10/31
 \section{Scalable Multi-label Annotation -- Rating: 4/5}
 Deng \emph{et~al.} \cite{Deng2014} address the scalablity issue of multi-label annotation. They proposes an algorithm that exploits correlation, hierarchy, and sparsity of the label distribution to yield significant savings for image labeling tasks.\\
 
