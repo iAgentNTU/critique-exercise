@@ -34,7 +34,7 @@ The setting of experiment and dataset is clear, but I wish they can provide the 
 I wish the paper can show the reason or comparison to use Dirichlet distribution to model hypothesis probability.
 
 
-\section{Summarizing Sporting Events Using Twitter -- Rating: 3/5}
+\section{Summarizing Sporting Events Using Twitter -- Rating: 4/5}
 Nichols \emph{et~al.} \cite{Nichols:IUI12} proposed an method for implicitly crowdsourcing summaries of events. They used word-frequency based method to analyse twitter updates when there is an extreme changes in updates volume. According to the score above, the result of their algorithm is top N sentences that score highly and each include different information.\\
 
 % positive #1: 3 key observations
@@ -48,6 +48,22 @@ I think the performance of this method is highly dependent on the topics. For ex
 
 % criticism:
 In phrase diagram, directly using the longest sentence is easy to be affected by noise. Using the sentence which is long and covers most keywords in other sentences may be better.
+
+
+\section{Build Chinese Emotion Lexicons Using A Graph-based Algorithm and Multiple Resources -- Rating: 4/5}
+Xu \emph{et~al.} \cite{Xu:COLING10} build Chinese emotion lexicons by incorporating multiple Chinese resources according to a few seed emotion words. \\
+
+% positive #1: 3 key observations
+The Chinese resources are showed clearly.\\
+
+% positive #2:
+The composition between words in Chinese or between prefix and suffix in English.\\ 
+
+% positive #3:
+It's good to consider there are many words that have multiple senses, but just discarding the one with less emotion is improvable.\\
+
+% criticism:
+The scalability may become a problem, and the cost of verifications by humans will be high when this lexicon becomes larger and larger.
 % ----------------------- import bibtex ----------------------------
 \bibliographystyle{abbrv}
 \bibliography{pohao_critique}
