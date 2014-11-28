@@ -17,21 +17,38 @@
 % Paper Name -- Rating: __/5
 % (commentary here)
 % 1 summary
-% 3 positive topics, 1 criticism 
-\section{A Bayesian Method to Incorporate Background Knowledge during Automatic Text Summarization -- Rating: 4/5}
-Louis \cite{Louis:ACL14} proposed another aspect in summarization, which focuses on extracting new text deviating from previous knowledge on the topic. They proposed an algorithm that exploits Bayesian and KL-divergence to extract new and important sentences.\\
+% 3 positive topics, 1 criticism
+\section{Emotion Classification in Microblog Texts Using Class Sequential Rules -- Rating: 4/5}
+Wen \emph{et~al.} \cite{Wen:AAAI14} combined structural information together with lexicon information and traditional ML features to do emotion classification. The structure information is learned by class sequential rules proposed by Hu, Minqing and Liu, Bing \cite{Hu:AAAI06}. And they add these information to features of svm.\\
 
 % positive #1: 3 key observations
-The paper proposed an interesting issue on summarization. Rather than extracting general importances for each document, extracting novel information is more helpful in some applications.\\
+Class sequential rules may be useful on many domains, like logic or behavior patterns.\\
 
 % positive #2:
-This inspired me that summarization can be variable, here the summarization is varied with knowledge corpus. Maybe there are others, like time or weather.\\ 
+We should try Class Sequential Rules on longer texts.\\
 
 % positive #3:
-The setting of experiment and dataset is clear, but I wish they can provide the comparison between small and big background corpus for topic-based and surprise-based method.\\
+The difference between this paper and Hu's class sequential rules are to-do.\cite{Hu:AAAI06} \\
 
 % criticism:
-I wish the paper can show the reason or comparison to use Dirichlet distribution to model hypothesis probability.
+The training of rules needs quite large human label, but I think we should use lexicon information as training label.
+
+
+
+\section{Build Chinese Emotion Lexicons Using A Graph-based Algorithm and Multiple Resources -- Rating: 4/5}
+Xu \emph{et~al.} \cite{Xu:COLING10} build Chinese emotion lexicons by incorporating multiple Chinese resources according to a few seed emotion words. \\
+
+% positive #1: 3 key observations
+The Chinese resources are showed clearly.\\
+
+% positive #2:
+The composition between words in Chinese or between prefix and suffix in English.\\ 
+
+% positive #3:
+It's good to consider there are many words that have multiple senses, but just discarding the one with less emotion is improvable.\\
+
+% criticism:
+The scalability may become a problem, and the cost of verifications by humans will be high when this lexicon becomes larger and larger.
 
 
 \section{Summarizing Sporting Events Using Twitter -- Rating: 4/5}
@@ -50,20 +67,22 @@ I think the performance of this method is highly dependent on the topics. For ex
 In phrase diagram, directly using the longest sentence is easy to be affected by noise. Using the sentence which is long and covers most keywords in other sentences may be better.
 
 
-\section{Build Chinese Emotion Lexicons Using A Graph-based Algorithm and Multiple Resources -- Rating: 4/5}
-Xu \emph{et~al.} \cite{Xu:COLING10} build Chinese emotion lexicons by incorporating multiple Chinese resources according to a few seed emotion words. \\
+\section{A Bayesian Method to Incorporate Background Knowledge during Automatic Text Summarization -- Rating: 4/5}
+Louis \cite{Louis:ACL14} proposed another aspect in summarization, which focuses on extracting new text deviating from previous knowledge on the topic. They proposed an algorithm that exploits Bayesian and KL-divergence to extract new and important sentences.\\
 
 % positive #1: 3 key observations
-The Chinese resources are showed clearly.\\
+The paper proposed an interesting issue on summarization. Rather than extracting general importances for each document, extracting novel information is more helpful in some applications.\\
 
 % positive #2:
-The composition between words in Chinese or between prefix and suffix in English.\\ 
+This inspired me that summarization can be variable, here the summarization is varied with knowledge corpus. Maybe there are others, like time or weather.\\ 
 
 % positive #3:
-It's good to consider there are many words that have multiple senses, but just discarding the one with less emotion is improvable.\\
+The setting of experiment and dataset is clear, but I wish they can provide the comparison between small and big background corpus for topic-based and surprise-based method.\\
 
 % criticism:
-The scalability may become a problem, and the cost of verifications by humans will be high when this lexicon becomes larger and larger.
+I wish the paper can show the reason or comparison to use Dirichlet distribution to model hypothesis probability.
+
+
 % ----------------------- import bibtex ----------------------------
 \bibliographystyle{abbrv}
 \bibliography{pohao_critique}
