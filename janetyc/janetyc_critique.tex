@@ -19,9 +19,23 @@
 % 3 positive topics
 % 1 criticism 
 % -----------------------
+% -----------------------
+% date: 2014/12/05
+\section{Structured Labeling to Facilitate Concept Evolution in Machine Learning -- Rating: 4.5/5}
+% summary
+The paper \cite{Kulesza2014} introduces the notion of concept evolution which can result in incosistent labels and thus be damaging to machine learning. To address the problem, they propose two structure labeling solutions for helping people define and refine their concept in a consistent manner as they label. They conducted a series of experiments illustrating the impact of concept evolution in practice. The results show that tructured labeling helps people label more consistently in the presence of concept evolution than traditional labeling.
 
+% positive #1: address a distrinct probelm (concept evolution)
+The authors address the concept evolution problem in labeling data of machine learning. They found that people labeling the same group of data twice with a four-week gap have only 81\% consistent with thier initial labels.
 
+% positive #2: 
+They introduce structured labeling as a novel approach to dealing with the concept evolution problem. Their experiment showed that people prefered structured labeling over traditional labeling and that structured labeling imporves label consistency but at a cost of speed.
 
+% positive $3
+The following up experiment comparing label consistency over time showed that structured labeling helped people recall their earlier labeling decisions and increased their consistency over time.
+
+% critique
+The paper used TFIDF to automatically generate and display text summaries for each group of labels. The user-generated labels are hard to be aggregated by a similar concept if only using term-frequency based similairy method. Embeding a knowledge graph may improve the structured labeling.
 
 % -----------------------
 % date: 2014/11/14
